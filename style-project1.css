@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(pexels-oleksandr-tiupa-53788-192136.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+section header ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+section header ul li img{
+    width: 20px;
+}
+section header ul li #profile{
+    border-radius: 50%;
+}
+
+section .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section .content h1{
+    color: white;
+    font-size: 6rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+section .content .search{
+    width: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+section .content .search input{
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin: auto;
+    position: relative;
+    font-size: 1rem;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    opacity: 0.7;
+}
+section .content .search .fa-search{
+    position: absolute;
+    top: 30%; 
+    left: 2%;   
+    color: rgb(101, 101, 101);
+    cursor: pointer;
+}
+section .content .search .fa-microphone{
+    position: absolute;
+    top: 30%; 
+    right: 2%;   
+    color: rgb(101, 101, 101);
+    cursor: pointer;
+}
+section .icons{
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+section .icons .box{
+    text-align: center;
+    margin: 0 30px;
+}
+section .icons .box i{
+    color: white;
+    font-size: 4rem;
+    border-radius: 50%;
+    opacity: .8;
+    cursor: pointer;
+}
+section .icons .box p{
+    color: white;
+    font-size: 1rem;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+@media (max-width:737px){
+    section .content .search {
+        width:451px;
+    }
